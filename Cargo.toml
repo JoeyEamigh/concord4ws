@@ -1,0 +1,22 @@
+[package]
+name = "concord4-ha"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+concord4 = { path = "./concord4-rs", features = ["json"] }
+futures = "0.3.28"
+tokio = { version = "1.32.0", features = ["full"] }
+tokio-serial = "5.4.4"
+tokio-tungstenite = "0.20.1"
+tokio-util = { version = "0.7.9", features = ["full"] }
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
+dotenv = { version = "0.15.0", optional = true }
+
+[workspace]
+members = ["./concord4-rs"]
+
+[features]
+default = ["dotenv"]    # don't commit this - remove dotenv from default
+dotenv = ["dep:dotenv"]
