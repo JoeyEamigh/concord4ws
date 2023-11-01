@@ -135,7 +135,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "concord4-ha"
+name = "concord4ws"
 version = "0.1.0"
 dependencies = [
  "concord4",

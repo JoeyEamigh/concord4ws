@@ -105,7 +105,7 @@ fn init_logger() {
   let filter_directives = if let Ok(filter) = std::env::var("RUST_LOG") {
     filter
   } else {
-    "concord4-ha=trace,concord4=trace,concord4::serial=info,concord4::siren-sync=info,concord4::touchpad=info"
+    "concord4ws=trace,concord4=trace,concord4::serial=info,concord4::siren-sync=info,concord4::touchpad=info"
       .to_string()
   };
 
@@ -117,7 +117,7 @@ fn init_logger() {
   let filter_directives = if let Ok(filter) = std::env::var("RUST_LOG") {
     filter
   } else {
-    "concord4-ha=info,concord4=info".to_string()
+    "concord4ws=info,concord4=info".to_string()
   };
 
   let filter = EnvFilter::builder()
