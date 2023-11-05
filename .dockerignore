@@ -1,0 +1,9 @@
+**
+
+!src/
+!Cargo.toml
+!Cargo.lock
+!rust-toolchain.toml
+
+!concord4-rs
+concord4-rs/target
