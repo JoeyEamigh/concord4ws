@@ -1,9 +1,12 @@
 [submodule "concord4-rs"]
 	path = concord4-rs
 	url = https://github.com/JoeyEamigh/concord4-rs.git
+	branch = main
 [submodule "concord4ws-py"]
 	path = concord4ws-py
 	url = https://github.com/JoeyEamigh/concord4ws-py.git
+	branch = main
 [submodule "concord4ws-ha"]
 	path = concord4ws-ha
 	url = https://github.com/JoeyEamigh/concord4ws-ha.git
+	branch = main
