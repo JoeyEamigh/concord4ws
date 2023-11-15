@@ -18,5 +18,5 @@ dotenv = { version = "0.15.0", optional = true }
 members = ["./concord4-rs"]
 
 [features]
-default = ["dotenv"]    # don't commit this - remove dotenv from default
+default = []
 dotenv = ["dep:dotenv"]
