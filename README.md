@@ -1,6 +1,6 @@
 # Concord4 WebSockets
 
-concord4ws is a websocket server for interacting with the Concord4 alarm system. It is designed to be run in a container that has access to the serial port connected to the Interlogix Superbus 2000. It is written in Rust and uses my [concord4-rs](https://github.com/JoeyEamigh/concord4-rs) library to communicate with the alarm panel. It was created to be used with Home Assistant via [concord4ws-ha](https://github.com/JoeyEamigh/concord4ws-ha).
+concord4ws is a websocket server for interacting with the Concord4 alarm system. It is designed to be run in a container that has access to the serial port connected to the Interlogix SuperBus 2000. It is written in Rust and uses my [concord4-rs](https://github.com/JoeyEamigh/concord4-rs) library to communicate with the alarm panel. It was created to be used with Home Assistant via [concord4ws-ha](https://github.com/JoeyEamigh/concord4ws-ha).
 
 ## Running
 
@@ -15,10 +15,10 @@ docker run --name concord4ws \
 
 ## Configuration
 
-| Environment Variable | Description | Default |
-| -------------------- | ----------- | ------- |
-| SERIAL_DEVICE | The serial device to use to communicate with the alarm panel. | (panic) |
-| SOCKET_PORT | The port to listen on for websocket connections. | 8080 |
+| Environment Variable | Description                                                   | Default |
+| -------------------- | ------------------------------------------------------------- | ------- |
+| SERIAL_DEVICE        | The serial device to use to communicate with the alarm panel. | (panic) |
+| SOCKET_PORT          | The port to listen on for websocket connections.              | 8080    |
 
 ## Setup with Home Assistant
 

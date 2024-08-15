@@ -1,5 +1,5 @@
 # build
-FROM rust:alpine as builder
+FROM rust:alpine AS builder
 
 WORKDIR /app
 
